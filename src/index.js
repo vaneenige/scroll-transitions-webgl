@@ -226,11 +226,11 @@ const instances = [
 ];
 
 const headings = document.querySelectorAll('.heading');
-const content = document.querySelector('.content');
+const header = document.querySelector('.header');
 
 uos(0, 1, p => render());
 
-uos(0, 0.05, p => (content.style.opacity = 1 - p));
+uos(0, 0.05, p => (header.style.opacity = 1 - p));
 
 const step = 1 / instances.length;
 for (let i = 0; i < instances.length; i += 1) {
@@ -249,7 +249,7 @@ function resize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  const divs = document.querySelectorAll('div');
+  const divs = document.querySelectorAll('.heading');
   for (let i = 0; i < divs.length; i += 1) {
     divs[i].style.height = `${window.innerHeight}px`;
   }
@@ -259,7 +259,7 @@ function resize() {
 requestAnimationFrame(() => {
   window.scrollTo(0, 0);
   resize();
-  content.style.opacity = 1;
+  header.style.opacity = 1;
 });
 
 window.addEventListener('resize', resize, false);
