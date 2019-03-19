@@ -1,0 +1,31 @@
+{
+  "name": "scroll-transitions-webgl",
+  "version": "1.0.0",
+  "description": "WebGL based transitions on scroll",
+  "scripts": {
+    "start": "http-server demo --silent & $npm_execpath run watch",
+    "watch": "microbundle watch --format umd --entry src/index.js --output demo/bundle.js --external all --sourcemap false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaneenige/scroll-transitions-webgl.git"
+  },
+  "author": {
+    "name": "Colin van Eenige",
+    "email": "cvaneenige@gmail.com",
+    "url": "https://use-the-platform.com"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "keywords": [
+    "codrops",
+    "webgl",
+    "demo"
+  ],
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "microbundle": "^0.11.0"
+  }
+}
