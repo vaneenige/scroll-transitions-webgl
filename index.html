@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WebGL based transitions on scroll | Codrops</title>
-    <meta name="description" content="WebGL based transitions on scroll" />
-    <meta
-      name="keywords"
-      content="webgl, particles, shader, threejs, javascript, demo, web development"
-    />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script>
-      document.documentElement.className = 'js';
-      var supportsCssVars = function() {
-        var e,
-          t = document.createElement('style');
-        return (
-          (t.innerHTML = 'root: { --tmp-var: bold; }'),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports('font-weight', 'var(--tmp-var)')
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert('Please view this demo in a modern browser that supports CSS Variables.');
-    </script>
-  </head>
-  <body style="overflow: auto;">
-    <main>
-      <div class="frame">
-        <div class="frame__title-wrap">
-          <h1 class="frame__title">WebGL transitions on scroll</h1>
-        </div>
-        <a class="frame__github" href="">GitHub</a>
-        <div class="frame__links">
-          <a href="">Previous Demo</a>
-          <a href="">Article</a>
-        </div>
-      </div>
-      <div class="content content--canvas">
-        <div class="header">
-          <h1>Phenomenon</h1>
-          <p>WebGL based transitions on scroll</p>
-        </div>
-        <div class="heading">
-          A tiny wrapper around three.js built for high-performance WebGL experiences.
-        </div>
-        <div class="heading">
-          GPU based for smooth transitions like scale, rotation and movement.
-        </div>
-        <div class="heading">Modify default geometry and material for infinite possibilities.</div>
-        <div class="heading">That's it, thank you for scrolling! :)</div>
-      </div>
-    </main>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>WebGL based transitions on scroll | Codrops</title>
+		<meta name="description" content="WebGL based transitions on scroll" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+		<meta name="keywords" content="webgl, particles, shader, threejs, javascript, demo, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var e,
+					t = document.createElement('style');
+				return (
+					(t.innerHTML = 'root: { --tmp-var: bold; }'),
+					document.head.appendChild(t),
+					(e = !!(
+						window.CSS &&
+						window.CSS.supports &&
+						window.CSS.supports('font-weight', 'var(--tmp-var)')
+					)),
+					t.parentNode.removeChild(t),
+					e
+				);
+			};
+			supportsCssVars() ||
+				alert('Please view this demo in a modern browser that supports CSS Variables.');
+		</script>
+	</head>
+	<body>
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">WebGL Transitions on Scroll</h1>
+				</div>
+				<a class="frame__github" href="https://github.com/vaneenige/scroll-transitions-webgl">GitHub</a>
+				<div class="frame__links">
+					<a href="https://tympanus.net/Development/SVGImageHover/">Previous Demo</a>
+					<a href="https://tympanus.net/codrops/?p=38923">Article</a>
+				</div>
+			</div>
+			<div class="content content--canvas">
+				<div class="header">
+					<h1 class="header__title">Phenomenon</h1>
+					<p class="header__text">WebGL based transitions on scroll</p>
+				</div>
+				<div class="heading">
+					A tiny wrapper around three.js built for high-performance WebGL experiences.
+				</div>
+				<div class="heading">
+					GPU based for smooth transitions like scale, rotation and movement.
+				</div>
+				<div class="heading">Modify default geometry and material for infinite possibilities.</div>
+				<div class="heading">That's it, thank you for scrolling! :)</div>
+			</div>
+		</main>
 
-    <script src="https://unpkg.com/three@0.102.1/build/three.min.js"></script>
-    <script src="https://unpkg.com/three.phenomenon@1.1.0/dist/three.phenomenon.umd.js"></script>
-    <script src="https://unpkg.com/uos@1.1.1/dist/uos.umd.js"></script>
-    <script src="/js/bundle.umd.js"></script>
-  </body>
+		<script src="https://unpkg.com/three@0.102.1/build/three.min.js"></script>
+		<script src="https://unpkg.com/three.phenomenon@1.1.0/dist/three.phenomenon.umd.js"></script>
+		<script src="https://unpkg.com/uos@1.1.1/dist/uos.umd.js"></script>
+		<script src="js/bundle.umd.js"></script>
+	</body>
 </html>

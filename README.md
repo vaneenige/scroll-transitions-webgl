@@ -2,11 +2,11 @@
 
 A demo that demonstrates how a smooth WebGL transition can be realized using Phenomenon (based on three.js).
 
-![Scroll Transitions WebGL]('')
+![Scroll Transitions WebGL](https://tympanus.net/codrops/wp-content/uploads/2019/03/Phenomenon_featured.jpg)
 
-[Article on Codrops]('')
+[Article on Codrops](https://tympanus.net/codrops/?p=38923)
 
-[Demo]('')
+[Demo](https://tympanus.net/Development/scroll-transitions-webgl)
 
 ## Credits
 
