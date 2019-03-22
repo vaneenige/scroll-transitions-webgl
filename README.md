@@ -6,7 +6,7 @@ A demo that demonstrates how a smooth WebGL transition can be realized using Phe
 
 [Article on Codrops](https://tympanus.net/codrops/?p=38923)
 
-[Demo](https://tympanus.net/Development/scroll-transitions-webgl)
+[Demo](https://tympanus.net/Tutorials/scroll-transitions-webgl)
 
 ## Credits
 
